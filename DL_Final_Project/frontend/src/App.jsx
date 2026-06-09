@@ -3,7 +3,7 @@ import * as d3 from 'd3';
 
 // ─── API ─────────────────────────────────────────────────────────────────────
 
-const API_BASE = 'https://dl-final-project.onrender.com';
+const API_BASE = 'https://dl-final-project-09xp.onrender.com';
 
 async function fetchStockData(stockNo, months = 1) {
   const res = await fetch(`${API_BASE}/api/stock/${stockNo}?months=${months}`);
