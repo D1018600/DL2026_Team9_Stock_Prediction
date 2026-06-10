@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/DL2026_Team9_Stock_Prediction/static/css/main.9d5725d6.css",
-    "main.js": "/DL2026_Team9_Stock_Prediction/static/js/main.803b059f.js",
+    "main.js": "/DL2026_Team9_Stock_Prediction/static/js/main.3fabb1d3.js",
     "index.html": "/DL2026_Team9_Stock_Prediction/index.html",
     "main.9d5725d6.css.map": "/DL2026_Team9_Stock_Prediction/static/css/main.9d5725d6.css.map",
-    "main.803b059f.js.map": "/DL2026_Team9_Stock_Prediction/static/js/main.803b059f.js.map"
+    "main.3fabb1d3.js.map": "/DL2026_Team9_Stock_Prediction/static/js/main.3fabb1d3.js.map"
   },
   "entrypoints": [
     "static/css/main.9d5725d6.css",
-    "static/js/main.803b059f.js"
+    "static/js/main.3fabb1d3.js"
   ]
 }
