@@ -107,9 +107,6 @@
 
 2\. 核心執行步驟
 
-&emsp;&emsp;請依照 Notebook 中的儲存格順序依次執行：
-
-
 &emsp;&emsp;Step 1：資料載入與排序
 
 &emsp;&emsp;&emsp;&emsp;程式會自動下載 2308.csv 數據，並嚴格依據時間軸進行由遠到近的升序排列。
