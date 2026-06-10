@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/DL-Final-Project/static/css/main.9d5725d6.css",
-    "main.js": "/DL-Final-Project/static/js/main.3c875a13.js",
-    "index.html": "/DL-Final-Project/index.html",
-    "main.9d5725d6.css.map": "/DL-Final-Project/static/css/main.9d5725d6.css.map",
-    "main.3c875a13.js.map": "/DL-Final-Project/static/js/main.3c875a13.js.map"
+    "main.css": "/DL2026_Team9_Stock_Prediction/static/css/main.9d5725d6.css",
+    "main.js": "/DL2026_Team9_Stock_Prediction/static/js/main.803b059f.js",
+    "index.html": "/DL2026_Team9_Stock_Prediction/index.html",
+    "main.9d5725d6.css.map": "/DL2026_Team9_Stock_Prediction/static/css/main.9d5725d6.css.map",
+    "main.803b059f.js.map": "/DL2026_Team9_Stock_Prediction/static/js/main.803b059f.js.map"
   },
   "entrypoints": [
     "static/css/main.9d5725d6.css",
-    "static/js/main.3c875a13.js"
+    "static/js/main.803b059f.js"
   ]
 }
