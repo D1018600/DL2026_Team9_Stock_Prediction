@@ -64,7 +64,7 @@ def fetch_yahoo(stock_no: str, months: int) -> list[dict]:
 
     # 多抓 1 個月補足 window
     end = datetime.now()
-    start = end - timedelta(days=(months + 1) * 31)
+    start = end - timedelta(days=(months + 2) * 31)
 
     try:
         ticker = yf.Ticker(symbol)

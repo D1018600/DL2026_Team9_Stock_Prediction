@@ -3,7 +3,8 @@ import * as d3 from 'd3';
 
 // ─── API ─────────────────────────────────────────────────────────────────────
 
-const API_BASE = 'https://dl-final-project-09xp.onrender.com';
+const API_BASE = process.env.REACT_APP_API_URL || '';
+// const API_BASE = "https://dl-final-project-09xp.onrender.com";
 
 async function fetchStockData(stockNo, months = 1) {
   const res = await fetch(`${API_BASE}/api/stock/${stockNo}?months=${months}`);
@@ -375,7 +376,7 @@ const STOCK_LIST = [
   { no: '2357', name: '華碩' },
 ];
 
-const MONTH_OPTIONS = [3, 6];
+const MONTH_OPTIONS = [1, 3];
 
 // ─── Main App ─────────────────────────────────────────────────────────────────
 
@@ -426,8 +427,17 @@ export default function App() {
 
       <div style={styles.header}>
         <div style={styles.headerLeft}>
-          <span style={styles.badge}>TWSE 上市</span>
-          <h1 style={styles.title}>股票 K 線儀表板</h1>
+          <a
+            href={`https://finance.yahoo.com/quote/${stockNo}.TW`}
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ ...styles.badge, textDecoration: 'none', cursor: 'pointer' }}
+          >
+            Yahoo Finance ↗
+          </a>
+          <h1 style={styles.title}>
+            {STOCK_LIST.find(s => s.no === stockNo)?.name ?? stockNo}
+          </h1>
         </div>
         <div style={styles.searchRow}>
           <select
