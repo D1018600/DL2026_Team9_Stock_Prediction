@@ -144,9 +144,9 @@
 
 &emsp;&emsp;Step 5：反標準化與指標評估
 
-&emsp;&emsp;&emsp;&emsp;當模型完成預測後，預測值會經由 StandardScaler.inverse\_transform 還原成真實的台幣股價金額，進而計算出最終的
+&emsp;&emsp;&emsp;&emsp;當模型完成預測後，預測值會經由 StandardScaler.inverse\_transform 還原成真實的台幣股價金額，進而計算出
 
-&emsp;&emsp;&emsp;&emsp;Valid MSE 與 MAE，並繪製出真實股價與各模型預測股價的對比折線圖。
+&emsp;&emsp;&emsp;&emsp;最終的Valid MSE 與 MAE，並繪製出真實股價與各模型預測股價的對比折線圖。
 
 
 &emsp;&emsp;Step 6：模型自動匯出
