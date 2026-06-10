@@ -117,12 +117,18 @@
 
 &emsp;&emsp;Step 2：資料集切分與標準化（防範資料洩漏）
 
-&emsp;&emsp;&emsp;&emsp;將前 85% 的歷史資料劃分為訓練集，後 15% 劃分為驗證集。使用 sklearn 的 StandardScaler 對 \['open', 'close', 'low', &emsp;&emsp;&emsp;&emsp;'high', 'volume'] 進行標準化。注意：僅使用訓練集擬合統計量，驗證集僅進行 transform，以避免資料洩漏。
+&emsp;&emsp;&emsp;&emsp;將前 85% 的歷史資料劃分為訓練集，後 15% 劃分為驗證集。使用 sklearn 的 StandardScaler 
+
+&emsp;&emsp;&emsp;&emsp;對 \['open', 'close', 'low', 'high', 'volume'] 進行標準化。注意：僅使用訓練集擬合統
+
+&emsp;&emsp;&emsp;&emsp;計量，驗證集僅進行 transform，以避免資料洩漏。
 
 
 &emsp;&emsp;Step 3：構建滑動視窗
 
-&emsp;&emsp;&emsp;&emsp;設定 WINDOW = 20。每次抽取連續 19 天的 5 個標準化特徵作為網路輸入（X），並將第 20 天的 close作為預測標籤 &emsp;&emsp;&emsp;&emsp;（Y）。
+&emsp;&emsp;&emsp;&emsp;設定 WINDOW = 20。每次抽取連續 19 天的 5 個標準化特徵作為網路輸入（X），並
+
+&emsp;&emsp;將第 20 天的 close作為預測標籤Y）。
 
 
 &emsp;&emsp;Step 4：模型訓練與優化
@@ -138,7 +144,9 @@
 
 &emsp;&emsp;Step 5：反標準化與指標評估
 
-&emsp;&emsp;&emsp;&emsp;當模型完成預測後，預測值會經由 StandardScaler.inverse\_transform 還原成真實的台幣股價金額，進而計算出最終的 &emsp;&emsp;&emsp;&emsp;Valid MSE 與 MAE，並繪製出真實股價與各模型預測股價的對比折線圖。
+&emsp;&emsp;&emsp;&emsp;當模型完成預測後，預測值會經由 StandardScaler.inverse\_transform 還原成真實的台幣股價金額，進而計算出最終的
+
+&emsp;&emsp;&emsp;&emsp;Valid MSE 與 MAE，並繪製出真實股價與各模型預測股價的對比折線圖。
 
 
 &emsp;&emsp;Step 6：模型自動匯出
@@ -153,7 +161,9 @@
 
 4\. 實驗結果與效能總結
 
-&emsp;&emsp;本專題透過四大時間序列模型（LSTM、BiLSTM、GRU、Transformer）進行橫向對比，以台灣股市台達電（2308）歷史數據預測第 n+1 天的收盤價。經過 30 個 Epoch 的完整訓練與驗證，各模型在Valid Set上的表現數據如下：
+&emsp;&emsp;本專題透過四大時間序列模型（LSTM、BiLSTM、GRU、Transformer）進行橫向對比，以台灣股市台達電（2308）歷史
+
+&emsp;&emsp;數據預測第 n+1 天的收盤價。經過 30 個 Epoch 的完整訓練與驗證，各模型在Valid Set上的表現數據如下：
 
 
 5\. 驗證集效能對比表
