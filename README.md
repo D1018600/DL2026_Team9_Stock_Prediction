@@ -161,12 +161,10 @@
 
 4\. 實驗結果與效能總結
 
-&emsp;&emsp;本專題透過四大時間序列模型（LSTM、BiLSTM、GRU、Transformer）進行橫向對比，以台灣股市台達電（2308）歷史
+&emsp;&emsp;本專題透過四大時間序列模型（LSTM、BiLSTM、GRU、Transformer）進行橫向對比，以台灣股市台達電（2308）
 
-&emsp;&emsp;數據預測第 n+1 天的收盤價。經過 30 個 Epoch 的完整訓練與驗證，各模型在Valid Set上的表現數據如下：
+&emsp;&emsp;歷史數據預測第 n+1 天的收盤價。經過 30 個 Epoch 的完整訓練與驗證，各模型在Valid Set上的表現數據如下：
 
-
-5\. 驗證集效能對比表
 
 | 模型架構 | 最終 Valid MSE | 最終 Valid MAE | 實驗評註與泛化表現 |
 | :--- | :--- | :--- | :--- |
